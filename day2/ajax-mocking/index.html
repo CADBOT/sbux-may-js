@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+    <script src='./bower_components/jquery/dist/jquery.js'></script>
+    <script src='./bower_components/jquery-mockjax/dist/jquery.mockjax.js'></script>
+    <script src='./mocks/mockdata.js'></script>
+    <script>
+    $.getJSON('products/1').done(function(data) {
+      console.log(data);
+    })
+    </script>
+  <body>
+  </body>
+</html>

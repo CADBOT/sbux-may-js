@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div ng-controller='ProductController'>
+      <h1>{{storeName}}</h1>
+      <ul>
+        <li ng-repeat="product in products">
+          Name: {{product.name}} Cost: {{product.price}}
+        </li>
+      </ul>
+      <p ng-repeat="product in products">
+        Name: {{product.name}} Cost: {{product.price}}
+      </p>
+    </div>
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

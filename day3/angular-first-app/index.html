@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div ng-controller='MyController'>
+      <h1>{{storeName}}</h1>
+      <p>Product Name: {{products[0].name}} Price: {{products[0].price}} </p>
+      <p>Product Name: {{products[1].name}} Price: {{products[1].price}} </p>
+    </div>
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

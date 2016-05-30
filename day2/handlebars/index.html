@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div id='app'>
+    </div>
+
+    <script id='productTemplate' type='text/x-handlebars-template'>
+      <div>
+        <h1>Our product</h1>
+        product name {{product.name}}
+        product cost {{product.cost}}
+      </div>
+    </script>
+
+    <script src='./bower_components/jquery/dist/jquery.js'></script>
+    <script src='./bower_components/handlebars/handlebars.js'></script>
+    <script>
+      var productTemplate = document.getElementById('productTemplate').textContent
+      var template = Handlebars.compile(productTemplate);
+
+      var context = {
+        product: {
+          name: 'donuts',
+          cost: 20
+        }
+      };
+
+      var compiled = template(context);
+      document.getElementById('app').innerHTML = compiled;
+      
+    </script>
+  </body>
+</html>
